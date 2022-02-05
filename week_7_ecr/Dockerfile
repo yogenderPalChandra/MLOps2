@@ -19,7 +19,7 @@ RUN pip install -r requirements_inference.txt
 # initialise dvc
 RUN dvc init --no-scm
 # configuring remote server in dvc
-RUN dvc remote add -d model-store s3://lakeformation-demo-yogender/MLOps/91/
+RUN dvc remote add -d model-store s3://lakeformation-demo-yogender/MLOps/
 
 RUN cat .dvc/config
 # pulling the trained model
